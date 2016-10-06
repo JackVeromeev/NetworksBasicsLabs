@@ -57,12 +57,11 @@ public class Encryption {
         * i = 1 because of we do not need first and last byte
          */
         int i = 1, j = 0;
-        for (; i < resource.length - 1;) {
-            if (resource[i] == packageEsk) {
+        for (; i < resource.length - 1; i++) {
+            if(resource[i] == packageEsk) {
                 i++;
             }
             result[j] = resource[i];
-            i++;
             j++;
         }
         return new String(result);

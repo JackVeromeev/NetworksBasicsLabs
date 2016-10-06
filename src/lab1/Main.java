@@ -9,7 +9,7 @@ import jssc.SerialPortException;
 
 public class Main extends Application {
 
-    public static String comName = "COM1";
+    public static String comName = "COM2";
     @Override
     public void start(Stage primaryStage) throws Exception{
 
