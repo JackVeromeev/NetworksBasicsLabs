@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab1.Controller">
-    <columnConstraints>
-        <ColumnConstraints />
-    </columnConstraints>
-    <rowConstraints>
-        <RowConstraints />
-    </rowConstraints>
-    <children>
-        <VBox GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
-            <children>
-                <TextArea fx:id="textArea1" editable="false" wrapText="true" VBox.vgrow="ALWAYS" />
-                <HBox fillHeight="false" VBox.vgrow="NEVER">
-                    <children>
+	<columnConstraints>
+		<ColumnConstraints/>
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints/>
+	</rowConstraints>
+	<children>
+		<VBox GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES"
+			  GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+			<children>
+				<TextArea fx:id="textArea1" editable="false" wrapText="true"
+						  VBox.vgrow="ALWAYS"/>
+				<HBox fillHeight="false" VBox.vgrow="NEVER">
+					<children>
 
-                        <ComboBox fx:id="comboBox1" promptText="2400" onAction="#comboboxChanged">
-                            <items>
-                                <FXCollections fx:factory="observableArrayList">
-                                    <String fx:id="2400" fx:value="2400" />
-                                    <String fx:id="9600" fx:value="9600" />
-                                    <String fx:id="19200" fx:value="19200" />
-                                    <String fx:id="38400" fx:value="38400" />
-                                    <String fx:id="57600" fx:value="57600" />
-                                </FXCollections>
-                            </items>
-                        </ComboBox>
+						<ComboBox fx:id="comboBox1" promptText="2400"
+								  onAction="#comboboxChanged">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:id="2400" fx:value="2400"/>
+									<String fx:id="9600" fx:value="9600"/>
+									<String fx:id="19200" fx:value="19200"/>
+									<String fx:id="38400" fx:value="38400"/>
+									<String fx:id="57600" fx:value="57600"/>
+								</FXCollections>
+							</items>
+						</ComboBox>
 
-                        <TextField fx:id="textField1" HBox.hgrow="ALWAYS" />
-                        <Button fx:id="sendButton1" mnemonicParsing="false" onMouseClicked="#handleButtonAction" text="Send" />
-                    </children>
-                </HBox>
-            </children>
-        </VBox>
-    </children>
+						<TextField fx:id="textField1" HBox.hgrow="ALWAYS"/>
+						<Button fx:id="sendButton1" mnemonicParsing="false"
+								onMouseClicked="#handleButtonAction"
+								text="Enter"/>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
 </GridPane>
