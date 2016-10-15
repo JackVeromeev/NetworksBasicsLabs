@@ -22,6 +22,7 @@ public class Controller {
 	public TextField textField1;
 	public Button sendButton1;
 
+
 	private final String rules =
 			">> type \"addpack:%string%\" to add string to message\n" +
 					">> type \"addtext:%text%\" to add text to message(for try)\n" +
